@@ -1,0 +1,35 @@
+body { background-color: gray; }
+   	h1 { text-align: center; color: darkblue; text-shadow: 2px 2px #ff0000; }
+   	h2 { color: white; text-shadow: 2px 2px #ff0000; }
+	h3 { color: bisque; text-align: center; color: dark; text-decoration: underline; }
+	h4 { color: bisque; text-align: left; text-decoration: underline; }
+
+label { color: ghostwhite; }
+   	
+#conteiner {
+  	margin-left: auto;
+   	margin-right: auto;
+}
+#tytulStrony {
+/*	background-color: greenyellow; */
+	background-color: whitesmoke;
+   	padding: 2px;
+}
+#divObliczanie {
+	font-size: 120%;
+}
+#stopka {
+	margin-top: auto;
+	margin-bottom: 50px;
+	size: auto;
+}
+
+/* ******************************************************** */
+	/* Tooltip */
+.test + .tooltip > .tooltip-inner {
+	background-color: #73AD21;
+	color: #e9ec0e;
+	border: 1px solid green;
+	padding: 15px;
+	font-size: 20px;
+}
