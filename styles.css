@@ -1,8 +1,9 @@
 body { background-color: gray; }
-   	h1 { text-align: center; color: darkblue; text-shadow: 2px 2px #ff0000; }
-   	h2 { color: white; text-shadow: 2px 2px #ff0000; }
+   /*	h1 { text-align: center; color: darkblue; text-shadow: 2px 2px #ff0000; }
+   	h2 { color: white; text-shadow: 2px 2px #ff0000; } */
 	h3 { color: bisque; text-align: center; color: dark; text-decoration: underline; }
-	h4 { color: bisque; text-align: left; text-decoration: underline; }
+	h4 { color: darkblue; text-align: left; text-decoration: underline; }
+	h5 { color: bisque; text-align: center; text-decoration: wavy; }
 
 label { color: ghostwhite; }
    	
@@ -16,11 +17,11 @@ label { color: ghostwhite; }
    	padding: 2px;
 }
 #divObliczanie {
-	font-size: 120%;
+	font-size: 100%;
 }
 #stopka {
-	margin-top: auto;
-	margin-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 30px;
 	size: auto;
 }
 

@@ -10,7 +10,7 @@
 		   if (!isNaN(mocUrzadzenia_w_Watach) && !isNaN(czasPracyUrzadzeniaMinuty) && !isNaN(kosztKWh)) {
 				var zuzycieEnergiiUrzadzeniaWczasie_w_KWh = ((mocUrzadzenia_w_Watach * czasPracyUrzadzeniaMinuty) / 60) / 1000;			
 				var wynikKosztowMinuty = zuzycieEnergiiUrzadzeniaWczasie_w_KWh * kosztKWh;		  
-				   document.getElementById("wynikMinuty").innerHTML="Koszty pracy urządzenia o mocy " + mocUrzadzenia_w_Watach + "W" + " " + "które pracuje w ciągu " + czasPracyUrzadzeniaMinuty + " " + "Minut" + " " + "wynosi: " + wynikKosztowMinuty + " " + "PLN";
+				   document.getElementById("wynikMinuty").innerHTML="Koszty pracy urządzenia o mocy [ " + mocUrzadzenia_w_Watach + " ] W" + " " + "które pracuje w ciągu [ " + czasPracyUrzadzeniaMinuty + " ] " + "Minut" + " " + "wynosi: [ " + wynikKosztowMinuty + " ] " + "PLN";
 			}
 			else {
 				document.getElementById("wynikMinuty").innerHTML="Wprowadziłeś błędne dane !!!";
@@ -34,7 +34,7 @@
 		   if (!isNaN(mocUrzadzenia_w_Watach_Godziny) && !isNaN(czasPracyUrzadzeniaGodziny) && !isNaN(kosztKWh_Godziny)) {
 			var zuzycie_Energii_Urzadzenia_W_czasie_w_KWh_Godziny = (mocUrzadzenia_w_Watach_Godziny * czasPracyUrzadzeniaGodziny) / 1000;
     		var wynikKosztow_Godziny = zuzycie_Energii_Urzadzenia_W_czasie_w_KWh_Godziny * kosztKWh_Godziny;
-    			document.getElementById("wynikGodziny").innerHTML="Koszty pracy urządzenia o mocy " + mocUrzadzenia_w_Watach_Godziny + " Wat" + " " + "które pracuje w ciągu " + czasPracyUrzadzeniaGodziny + " " + "Godzin" + " " + "wynosi: " + wynikKosztow_Godziny + " " + "PLN";
+    			document.getElementById("wynikGodziny").innerHTML="Koszty pracy urządzenia o mocy [ " + mocUrzadzenia_w_Watach_Godziny + " ] Wat" + " " + "które pracuje w ciągu [ " + czasPracyUrzadzeniaGodziny + " ] " + "Godzin" + " " + "wynosi: [ " + wynikKosztow_Godziny + " ] " + "PLN";
 		   }
 		   else {
 			   document.getElementById("wynikGodziny").innerHTML="Wprowadziłeś błędne dane !!!";
@@ -56,8 +56,8 @@
 			var zuzycie_Energii_Urzadzenia_W_czasie_w_KWh_Dni = ((moc_Urzadzenia_w_Watach_Dni * czas_Pracy_Urzadzenia_Dni) * 24) / 1000;  
 			var wynikKosztow_Dni = zuzycie_Energii_Urzadzenia_W_czasie_w_KWh_Dni * kosztKWh_Dni;
 
-			document.getElementById("zuzycieKWh_Dni").innerHTML="Urządzenie zużyło: " + zuzycie_Energii_Urzadzenia_W_czasie_w_KWh_Dni + "KWh";
-    		document.getElementById("wynikDni").innerHTML="Koszt pracy urządzenia o mocy " + moc_Urzadzenia_w_Watach_Dni + " Wat" + " w czasie " + czas_Pracy_Urzadzenia_Dni + " dni" + " wynosi: " + wynikKosztow_Dni + " PLN";
+			document.getElementById("zuzycieKWh_Dni").innerHTML="Urządzenie zużyło: [ " + zuzycie_Energii_Urzadzenia_W_czasie_w_KWh_Dni + " ] KWh";
+    		document.getElementById("wynikDni").innerHTML="Koszt pracy urządzenia o mocy [ " + moc_Urzadzenia_w_Watach_Dni + " ] Wat" + " w czasie [ " + czas_Pracy_Urzadzenia_Dni + " ] dni" + " wynosi: [ " + wynikKosztow_Dni + " ] PLN";
 		}
 		else {
 			document.getElementById("wynikDni").innerHTML="Wprowadziłeś błędne dane !!!";
@@ -74,7 +74,7 @@
 
 			if (!isNaN(liczbaPole_10)) {
 				var wynikKiloWaty = (((pierwiastekZtrzech * naterzenieAmpery) * napiecieVolt) * cosFi);
-	    		document.getElementById("pradNaMocWynik").innerHTML="Moc urządzenia przy napięciu 400 V i natęrzeniu prądu wynoszącym: " + naterzenieAmpery + "A wynosi: " + wynikKiloWaty + "KW";
+	    		document.getElementById("pradNaMocWynik").innerHTML="Moc urządzenia przy napięciu 400 V i natęrzeniu prądu wynoszącym: [ " + naterzenieAmpery + " ]A wynosi: [ " + wynikKiloWaty + " ] KW";
 			}
 			else {
 				document.getElementById("pradNaMocWynik").innerHTML= "Wprowadziłeś błędne dane !!!";
@@ -91,7 +91,7 @@
 			if (!isNaN(liczbaPole_11)) {
 				var podzielnikMocy = (pierwiastekZtrzech * napiecieVolt) * cosFi;
     			var pradWynik = moc / podzielnikMocy;
-    			document.getElementById("mocNaPradWynik").innerHTML="Moc urządzenia: " + moc + " KW  Napięcie sieci: " + napiecieVolt + " Volt" + " Natężenie wynosi: " + pradWynik + " A";
+    			document.getElementById("mocNaPradWynik").innerHTML="Moc urządzenia: [ " + moc + " ] KW  Napięcie sieci: [ " + napiecieVolt + " ] Volt" + " Natężenie wynosi: [ " + pradWynik + " ] A";
 			}
 			else {
 				document.getElementById("mocNaPradWynik").innerHTML= "Wprowadziłeś błędne dane !!!";
@@ -107,7 +107,7 @@
 
 			if (!isNaN(mocPradJednofazowy)) {
 				var pradWynik = mocPradJednofazowy / napiecieVolt;
-				document.getElementById("mocNaPrad230Wynik").innerHTML="Przy napięciu " + napiecieVolt + " V" + " i mocy urządzenia wynoszącej: " + mocPradJednofazowy + " W" + " natężenie prądu wynosi: " + pradWynik + " Amperów";
+				document.getElementById("mocNaPrad230Wynik").innerHTML="Przy napięciu [ " + napiecieVolt + " ] V" + " i mocy urządzenia wynoszącej: [ " + mocPradJednofazowy + " ] W" + " natężenie prądu wynosi: [ " + pradWynik + " ] Amperów";
 			}
 			else {
 				document.getElementById("mocNaPrad230Wynik").innerHTML= "Wprowadziłeś błędne dane !!!"
@@ -125,7 +125,7 @@
 			
 			if (!isNaN(moc) && !isNaN(wspolczunnik)) {
 				var pojemnosc = (wspolczunnik * moc) * cosFi;
-				document.getElementById("obliczKondensatorWynik").innerHTML="Pojemność kondensatora wynosi: " + pojemnosc + " uF";
+				document.getElementById("obliczKondensatorWynik").innerHTML="Pojemność kondensatora wynosi: [ " + pojemnosc + " ] uF";
 			}
 			else {
 				document.getElementById("obliczKondensatorWynik").innerHTML="Wprowadziłeś błędne dane !!!";
@@ -140,7 +140,7 @@
 
 		if (!isNaN(KWh)) {
 			var wynik = (KWh / godziny) * 1000;
-			document.getElementById("przeliczKWhNaMocWynik").innerHTML="Moc urządzenia które zużyło " + KWh + " KWh" + " w czasie: " + godziny + " godzin " + " wynosi: " + wynik + " Wat";
+			document.getElementById("przeliczKWhNaMocWynik").innerHTML="Moc urządzenia które zużyło [ " + KWh + " ] KWh" + " w czasie: [ " + godziny + " ] godzin " + " wynosi: [ " + wynik + " ] Wat";
 		}
 		else {
 			document.getElementById("przeliczKWhNaMocWynik").innerHTML="Wprowadziłeś błędne dane !!!";

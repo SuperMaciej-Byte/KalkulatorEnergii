@@ -24,7 +24,8 @@
 		<div id="tytulStrony">
 <!--   		<h1>Kalkulator Energii by SuperMaciej</h1> -->
    	</div>
-		   <h3>---------------- KALKULATOR KOSZTÓW ENERGII -----------------</h3><br />
+		   <h3>---------------- KALKULATOR ENERGII -----------------</h3>
+		   <h5>-------------- Powered by SuperMaciej -----------------</h5><br />
 
 		  <!-- <h4><a style="color: bisque;" class="test" href="#" data-toggle="tooltip" data-placement="top" title="ToolTip Kurwa!">ToolTip Kurwa Przykład</a></h4> -->
 	
@@ -34,10 +35,10 @@
    		<div style="float: left;"><label>Czas:</label>
 			<a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj wprowadź czas pracy urządzenia w minutach."><input type="text" size="5" id="pole_2"/></a></div>
    		<div><label>Koszt:</label>
-			<a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj możesz zmienić koszt KWh."><input type="text" size="5" value="0.62" id="pole_3"/></a>
+			<a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj możesz zmienić koszt KWh."><input type="text" size="5" value="0.80" id="pole_3"/></a>
    		<input type="submit" value="Oblicz" onclick="energiaMinuty()"/></div>
    	
-   	<h2><div id="wynikMinuty"></div></h2>
+   	<h4><div id="wynikMinuty"></div></h4>
    	
 <!-- ----------------- Czas pracy Godziny ------------------------------------------------------------ -->
 	
@@ -46,10 +47,10 @@
    		<div style="float: left;"><label>Czas:</label>
 			<a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj wprowadź czas pracy urządzenia w Godzinach."><input type="text" size="5" id="pole_5"/></a></div>
    		<div><label>Koszt:</label>
-			<a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj możesz zmienić koszt KWh."><input type="text" size="5" value="0.62" id="pole_6"/></a>
+			<a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj możesz zmienić koszt KWh."><input type="text" size="5" value="0.80" id="pole_6"/></a>
    		<input type="submit" value="Oblicz" onclick="energiaGodziny()"/></div>
    	
-   	<h2><div id="wynikGodziny"></div></h2>
+   	<h4><div id="wynikGodziny"></div></h4>
    	
  <!-- ----------------- Czas pracy Dni ------------------------------------------------------------ -->  
    <div style="float: left;"><label>Moc:</label>
@@ -57,11 +58,11 @@
    		<div style="float: left;"><label>Czas:</label>
 			<a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj wprowadź czas pracy urządzenia w Dniach."><input type="text" size="5" id="pole_8"/></a></div>
    		<div><label>Koszt:</label>
-			<a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj możesz zmienić koszt KWh."><input type="text" size="5" value="0.62" id="pole_9"/></a>
+			<a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj możesz zmienić koszt KWh."><input type="text" size="5" value="0.80" id="pole_9"/></a>
 		   <input type="submit" value="Oblicz" onclick="energiaDni()"/></div>
 		   
-   	<h2><div id="zuzycieKWh_Dni"></div></h2>
-   	<h2><div id="wynikDni"></div></h2>
+   	<h4><div id="zuzycieKWh_Dni"></div></h4>
+   	<h4><div id="wynikDni"></div></h4>
    	
    	<h4> KALKULATOR NATĘŻENIA I MOCY PRĄDU W UKŁADZIE TRÓJ-FAZOWYM (napięcie 400V) </h4>
    	<div id="divObliczanie">Obliczenie MOCY urządzenia na podstawie NATĘRZENIA prądu w układzie trój-fazowym (400 V)</div>
@@ -69,14 +70,14 @@
    			<input type="text" size="5" value="0" id="pole_10"/>
    			<input type="submit" value="Oblicz" onclick="pradNaMoc400()" /></div>
    			
-   			<h2><div id="pradNaMocWynik"></div></h2>
+   			<h4><div id="pradNaMocWynik"></div></h4>
    	
    	<div id="divObliczanie">Obliczenie NATĘŻENIA prądu na podstawie MOCY urządzenia w układzie trój-fazowym (400 V)</div>
 		<div><label>Podaj moc urządzenia w KW:</label>
 		<input type="text" size="5" value="0" id="pole_11" />  
 		<input type="submit" value="Oblicz" onclick="mocNaPrad400()" /></div>   	
    	
-   	<h2><div id="mocNaPradWynik" ></div></h2>
+   	<h4><div id="mocNaPradWynik" ></div></h4>
    	
    	<div id="divObliczanie">Obliczenie prądu na podstawie mocy 230 V</div>
 	   <div>
@@ -84,22 +85,10 @@
    	<input type="text" size="5" value="0" id="pole_12" />
    	<input type="submit" value="Oblicz" onclick="mocNaPrad230()" /></div>
    	
-	   <h2><div id="mocNaPrad230Wynik" ></div></h2>
-   	
-   	
-   	<div id="divObliczanie">Obliczenie pojemności kondensatora dla zasilania silnika przeznaczonego na 400 V napięciem 230 V ---</div>
-	   <div style="float: left;">
-		<label>Moc silnika:</label>
-		<a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj wprowadź moc silnika w KW."><input type="text" size="5" id="pole_13" /></a></div>
-	  <div style="float: left;">
-		<label>Współczynnik:</label>
-			<input type="text" size="5" value="70" id="pole_14" />
-   	<input type="submit" value="Oblicz" onclick="obliczKondensator()" /></div>
-   	
-   	<h2 style="clear:both"><div id="obliczKondensatorWynik"></div></h2>
+	   <h4><div id="mocNaPrad230Wynik" ></div></h4>
 
-	
-	<div id="divObliczanie">Przelicz KWh Na Moc</div>
+	   
+	<div id="divObliczanie">Przelicz KWh Na Moc Urządzenia </div>
 		<div style="float: left;">
 		 <label>KWh</label>
 <!-- -->	 <a class="test" href="#" data-toggle="tooltip" data-placement="top, bottum" title="Tutaj wprowadź ilość KWh zużytych przez urządzenie w ciągu 24 godzin.">  <input type="text" size="5" id="pole_15" /></a> </div>
@@ -107,14 +96,27 @@
 	 <label>Oblicz</label>
 	 <input type="submit" value="Oblicz" onclick="KWhNaMoc()" /></div>
 
-	 <h2 style="clear:both;"><div id="przeliczKWhNaMocWynik"></div> </h2>
+	 <h4 style="clear: both;"><div id="przeliczKWhNaMocWynik"></div> </h4>
+
+		<br />
+		
+	 <div id="divObliczanie">Obliczenie pojemności kondensatora dla zasilania silnika przeznaczonego na 400 V napięciem 230 V ---</div>
+	 <div style="float: left;">
+	  <label>Moc silnika:</label>
+	  <a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Tutaj wprowadź moc silnika w KW."><input type="text" size="5" id="pole_13" /></a></div>
+	<div style="float: left;">
+	  <label>Współczynnik:</label>
+		  <input type="text" size="5" value="70" id="pole_14" />
+	 <input type="submit" value="Oblicz" onclick="obliczKondensator()" /></div>
+	 
+	 <h4 style="clear:both"><div id="obliczKondensatorWynik"></div></h4>	 
 
 </div> <!-- TO JEST CHYBA KONIEC CONTENERA, ALE TAK WŁAŚCIWIE TO CHUJ WIE CZY TUTAJ ??? -->
 		<!-- To jest chyba kurwa na pewno koniec contenera !!! -->
 
 		<div id="stopka">
-			<h4><a style="text-align: center; font-size: 15px;margin: auto; color: antiquewhite;">
-				Tu powinna być Stopka, ale jej nie ma...</a></h4>
+			<a style="text-align: center; font-size: 15px;margin: auto; color: antiquewhite;">
+				Tu powinna być Stopka, ale jej nie ma. Kiedyś będzie trzeba coś wymyślić...</a>
 		</div>
 <!-- -->
  
