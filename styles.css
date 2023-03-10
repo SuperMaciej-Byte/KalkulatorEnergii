@@ -3,7 +3,8 @@ body { background-color: gray; }
    	h2 { color: white; text-shadow: 2px 2px #ff0000; } */
 	h3 { color: bisque; text-align: center; color: dark; text-decoration: underline; }
 	h4 { color: darkblue; text-align: left; text-decoration: underline; }
-	h5 { color: bisque; text-align: center; text-decoration: wavy; }
+	h5 { color: bisque; text-align: left; text-decoration: wavy; }
+	h6 { color: bisque; text-align: center; text-decoration: double;}
 
 label { color: ghostwhite; }
    	
